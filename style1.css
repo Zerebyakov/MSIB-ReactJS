@@ -1,0 +1,40 @@
+/* h1 {
+    text-align: center;
+}
+
+
+.box {
+    background-color: blueviolet;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+
+}
+.box-dua {
+    background-color: red;
+    height: 100px;
+    width: 600px;
+    margin-left: 70px;
+} */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header {
+    display: flex;
+}
