@@ -3,7 +3,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #239ac2;
+    background-color: #000080;
 }
 
 .birthdayCard {
@@ -46,7 +46,6 @@ body {
     font-family: Tahoma, sans-serif;
     text-align: center;
     margin: 30px;
-    background-image: linear-gradient(120deg, #ffd856 0%, #f98c6e 100%);
     transition: 0.1s;
 }
 
@@ -65,25 +64,25 @@ body {
 }
 
 .balloon-1 {
-    background-color: rgba(255, 40, 90, 0.7);
+    background-color: rgba(255, 0, 0, 0.7);
     left: -10px;
     top: 50px;
 }
 
 .balloon-2 {
-    background-color: rgba(9, 215, 160, 0.7);
+    background-color: rgba(0, 255, 21, 0.699);
     left: 50px;
     top: 20px;
 }
 
 .balloon-3 {
-    background-color: rgba(255, 186, 26, 0.7);
+    background-color: rgba(45, 0, 245, 0.7);
     left: 110px;
     top: 50px;
 }
 
 .balloon-4 {
-    background-color: rgba(12, 122, 159, 0.7);
+    background-color: rgba(30, 31, 31, 0.7);
     left: 170px;
     top: 50px;
 }
@@ -118,15 +117,15 @@ body {
 }
 
 .balloon-2::after {
-    border-bottom: 10px solid #04b183;
+    border-bottom: 10px solid #00ff22;
 }
 
 .balloon-3::after {
-    border-bottom: 10px solid #ffc94c;
+    border-bottom: 10px solid #2c2aa7;
 }
 
 .balloon-4::after {
-    border-bottom: 10px solid #13a9bd;
+    border-bottom: 10px solid #383838;
 }
 
 .cardInside {
