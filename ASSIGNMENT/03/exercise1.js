@@ -4,9 +4,6 @@
 
 
 function isArithmeticProgression(numbers) {
-    // if (numbers.length < 2) {
-    //     return true;
-    // }
     const diff = numbers[1] - numbers[0];
     for (let i = 2; i < numbers.length; i++) {
         if(numbers[i] - numbers[i - 1] !== diff){

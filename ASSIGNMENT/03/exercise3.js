@@ -1,3 +1,7 @@
+// Nama : Zulfan Ariq Asidqi
+// ReactJs 02
+// Kode Peserta : RJO209
+
 function sumArray(arr, int) {
     let result = [];
     let seen = new Set();

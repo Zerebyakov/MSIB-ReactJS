@@ -1,16 +1,16 @@
+// Nama : Zulfan Ariq Asidqi
+// ReactJs 02
+// Kode Peserta : RJO209
+
 function threeStepsAB(text) {
-    // Loop melalui setiap karakter dalam string
     for (let i = 0; i < text.length; i++) {
-        // Periksa apakah karakter adalah 'a' dan 3 karakter setelahnya adalah 'b'
         if (text[i] === 'a' && text[i + 4] === 'b') {
             return true;
         }
-        // Periksa apakah karakter adalah 'b' dan 3 karakter setelahnya adalah 'a'
         if (text[i] === 'b' && text[i + 4] === 'a') {
             return true;
         }
     }
-    // Jika tidak ditemukan sama sekali
     return false;
 }
 

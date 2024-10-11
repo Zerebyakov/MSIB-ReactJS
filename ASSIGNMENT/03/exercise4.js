@@ -1,3 +1,7 @@
+// Nama : Zulfan Ariq Asidqi
+// ReactJs 02
+// Kode Peserta : RJO209
+
 function arrSum(arr) {
     let maxSum = arr[0]; 
     let currentSum = arr[0]; 
@@ -22,4 +26,4 @@ function arrSum(arr) {
 
     return [subArray, maxSum];
 }
-console.log(arrSum([-2, -3, 4, -1, -2, 1, 5, -3]));
+console.log(arrSum([-2, -3, 4, -1, -2, 1, 5, -3])); // output [[4,-1,-2,1,5],7]
