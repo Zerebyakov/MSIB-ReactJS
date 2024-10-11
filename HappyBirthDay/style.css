@@ -1,12 +1,22 @@
+/* 
+NAMA : ZULFAN ARIQ ASIDQI
+REACTJS 02
+KODE PESERTA : RCJ02S009
+
+*/
+
+
+
 body {
     display: flex;
+    margin: auto;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: #000080;
 }
 
-.birthdayCard {
+.birthday-card {
     position: relative;
     width: 250px;
     height: 350px;
@@ -16,29 +26,29 @@ body {
     transition: 1s;
 }
 
-.birthdayCard:hover {
+.birthday-card:hover {
     transform: perspective(2500px) rotate(5deg);
     box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
-    0 10px 100px rgba(0, 0, 0, 0.5);
+        0 10px 100px rgba(0, 0, 0, 0.5);
 }
 
-.birthdayCard:hover .cardFront {
+.birthday-card:hover .card-front {
     transform: rotateY(-160deg);
 }
 
-.birthdayCard:hover .happy {
+.birthday-card:hover .happy {
     visibility: hidden;
 }
 
-.cardFront {
+.card-front {
     position: relative;
-    background-color: #fff;
+    background-color: #ffffff;
     width: 250px;
     height: 350px;
     overflow: hidden;
     transform-origin: left;
     box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
-    30px 0 50px rgba(0, 0, 0, 0.4);
+        30px 0 50px rgba(0, 0, 0, 0.4);
     transition: 0.6s;
 }
 
@@ -53,10 +63,7 @@ body {
     position: absolute;
 }
 
-.balloon-1,
-.balloon-2,
-.balloon-3,
-.balloon-4 {
+.balloon {
     position: absolute;
     width: 85px;
     height: 95px;
@@ -70,7 +77,7 @@ body {
 }
 
 .balloon-2 {
-    background-color: rgba(0, 255, 21, 0.699);
+    background-color: rgba(0, 255, 21, 0.7);
     left: 50px;
     top: 20px;
 }
@@ -87,10 +94,7 @@ body {
     top: 50px;
 }
 
-.balloon-1::before,
-.balloon-2::before,
-.balloon-3::before,
-.balloon-4::before {
+.balloon::before {
     content: "";
     position: absolute;
     width: 1px;
@@ -100,10 +104,7 @@ body {
     left: 43px;
 }
 
-.balloon-1::after,
-.balloon-2::after,
-.balloon-3::after,
-.balloon-4::after {
+.balloon::after {
     content: "";
     position: absolute;
     border-right: 7px solid transparent;
@@ -128,7 +129,7 @@ body {
     border-bottom: 10px solid #383838;
 }
 
-.cardInside {
+.card-inside {
     position: absolute;
     background-color: #fff;
     width: 250px;
@@ -162,12 +163,47 @@ p {
 }
 
 .image {
-    width: 100%;            
-    height: auto;          
-    object-fit: cover;     
-    position: absolute;      
-    top: 50%;               
-    left: 50%;              
-    transform: translate(-50%, -50%); 
-    z-index: -1;          
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
+    z-index: -1; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); 
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    cursor: pointer;
 }
