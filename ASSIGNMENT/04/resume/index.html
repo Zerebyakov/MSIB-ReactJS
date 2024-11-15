@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Section</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section class="profile-section">
+        <div class="profile-card">
+            <div class="profile-left">
+                <img src="./profil.png" alt="profile image" class="profile-img">
+                <h2 class="profile-name">Nama Anda</h2>
+                <p class="profile-title">Front End Designer</p>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-resume">Resume</button>
+            </div>
+            <div class="profile-right">
+                <ul class="profile-info">
+                    <li><strong>Availability</strong>: Full Time</li>
+                    <li><strong>Usia</strong>: 19</li>
+                    <li><strong>Lokasi</strong>: Jakarta</li>
+                    <li><strong>Pengalaman</strong>: 2 Tahun</li>
+                    <li><strong>Email</strong>: email@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="form-section hidden">
+        <form id="profileForm">
+            <label for="name">Nama</label>
+            <input type="text" id="name" value="Nama Anda">
+
+            <label for="role">Role</label>
+            <input type="text" id="role" value="Front End Designer">
+
+            <label for="availability">Availability</label>
+            <input type="text" id="availability" value="Full Time">
+
+            <label for="age">Usia</label>
+            <input type="number" id="age" value="19">
+
+            <label for="location">Lokasi</label>
+            <input type="text" id="location" value="Jakarta">
+
+            <label for="experience">Years Experience</label>
+            <input type="number" id="experience" value="2">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" value="email@gmail.com">
+
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
