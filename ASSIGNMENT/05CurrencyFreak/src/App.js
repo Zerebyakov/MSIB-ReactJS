@@ -70,3 +70,6 @@ function CurrencyRates() {
 }
 
 export default CurrencyRates;
+
+
+//Tugas ASSIGNMENT 05 
